@@ -28,15 +28,15 @@
 
         <h5>Old Gray:</h5>
         <p>This classic is the most basic standard rock we do at Rocks and Rocks alone</p>
-        <button class="navItemSmall buttonDefault" name="oldGray" value="oldGray">Add it to your order!</button>
+        <button class="navItemSmall buttonDefault" name="oldGray" value="oldGray">View</button>
 
         <h5>Classic Granite:</h5>
         <p>Add a little style and flair to your rock, you only live once.</p>
-        <button class="navItemSmall buttonDefault" name="granite">Add it to your order!</button>
+        <button class="navItemSmall buttonDefault" name="granite">View</button>
 
         <h5>Dark Slate:</h5>
         <p>Like a chalkboard, but you buy it from us </p>
-        <button class="navItemSmall buttonDefault" name="slate">Add it to your order!</button>
+        <button class="navItemSmall buttonDefault" name="slate">View</button>
     </div>
 </form>
 <div id="footer">

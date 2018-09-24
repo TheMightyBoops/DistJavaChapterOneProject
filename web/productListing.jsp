@@ -37,6 +37,6 @@
         } else { out.print("error");}
 
 %>
-
+<button name="addToCart" value="Add to cart"></button>
 </body>
 </html>
