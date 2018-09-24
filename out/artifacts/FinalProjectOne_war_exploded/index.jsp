@@ -9,16 +9,16 @@
 <html>
   <head>
     <title>$Title$</title>
-      <link rel="stylesheet" type="text/css" href="./css/StyleBuilderClasses.css"/>
+      <link rel="stylesheet" type="text/css" href="StyleBuilderClasses.css"/>
   </head>
   <body>
   <div id="header" class="header">
       <div id="nav">
 
           <a class = "navItemLarge" id="homeName" href="index.jsp">Rocks and Rocks Alone</a>
-          <a class="navItem" id="productList" href="./html/productList.xhtml">Product List</a>
-          <a class="navItem" id="productDetail" href="./html/productDetail.xhtml">Product Detail</a>
-          <a class="navItem" id="cart" href="./html/cart.xhtml">Cart</a>
+          <a class="navItem" id="productList" href="productList.xhtml">Product List</a>
+          <a class="navItem" id="productDetail" href="productDetail.xhtml">Product Detail</a>
+          <a class="navItem" id="cart" href="cart.xhtml">Cart</a>
           <a class="navItemSmall" id="goToGitHub"
              href="https://github.com/TheMightyBoops/DistJavaProjectOne">
               View this page's sourcecode</a>

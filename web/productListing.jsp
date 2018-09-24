@@ -1,4 +1,5 @@
-<%--
+<%@ page import="com.lucas.nolting.models.Product" %>
+<%@ page import="java.util.ArrayList" %><%--
   Created by IntelliJ IDEA.
   User: lucas
   Date: 9/19/18
@@ -9,7 +10,7 @@
 <html>
 <head>
     <title>Product List</title>
-    <link rel="stylesheet" type="text/css" href="../css/StyleBuilderClasses.css"/>
+    <link rel="stylesheet" type="text/css" href="StyleBuilderClasses.css"/>
 </head>
 <body>
 <div id="header" class="header">
@@ -25,6 +26,19 @@
     </div>
 </div>
 <!-- unique stuff -->
+
+<%
+        Product product = (Product) request.getAttribute("product");
+
+        if(product != null) {
+                out.print("<h2>"+ product.getName() + "</h2>");
+                out.print("<h3>" + product.getPrice() + "</h3>");
+                out.print("<p>" + product.getDescription() + "</p>");
+                out.print("<img src=\"" + product.getImage() + "\" " +
+                        "height=\"100\" width=\"100\">");
+        } else { out.print("error");}
+
+%>
 
 </body>
 </html>

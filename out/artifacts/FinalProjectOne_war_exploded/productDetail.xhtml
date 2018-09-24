@@ -3,8 +3,8 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>cart</title>
-    <link rel="stylesheet" type="text/css" href="../css/StyleBuilderClasses.css"/>
+    <title>productDetail</title>
+    <link rel="stylesheet" type="text/css" href="StyleBuilderClasses.css"/>
 </head>
 <body>
 <div id="header" class="header">
@@ -19,16 +19,24 @@
             View this page's sourcecode</a>
     </div>
 </div>
+<form action="ProductController" method="post">
 <div id="main">
-    <h3>cart</h3>
-    <p>**This will eventually populate itself but a line will look as follows</p>
-    <form action="">
-        Name of Item
-        <label for="quantity">Quantity</label>
-        <input type="text" id="quantity" size="3"/>
-    </form>
-    <button type="button" class="buttonDefault">Update </button>
+    <h3>Product detail</h3>
+
+    
+    <h5>Old Gray:</h5>
+    <p>This classic is the most basic standard rock we do at Rocks and Rocks alone</p>
+    <a href="productList.xhtml" class="navItemSmall">Add it to your order!</a>
+
+    <h5>Classic Granite:</h5>
+    <p>Add a little style and flair to your rock, you only live once.</p>
+    <a href="productList.xhtml" class="navItemSmall">Add it to your order!</a>
+
+    <h5>Dark Slate:</h5>
+    <p>Like a chalkboard, but you buy it from us </p>
+    <a href="productList.xhtml" class="navItemSmall">Add it to your order!</a>
 </div>
+</form>
 <div id="footer">
     <div id="contact">
         <a id="email">placeHolder@this.com</a>

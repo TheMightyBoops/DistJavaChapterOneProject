@@ -9,7 +9,7 @@ public class Product {
     private double price;
     private Image productImage;
 
-    Product(String id, String name, String description,
+    public Product(String id, String name, String description,
             double price, Image image) {
         setId(id);
         setName(name);
@@ -50,8 +50,8 @@ public class Product {
         this.price = price;
     }
 
-    public Image getImage() {
-        return productImage;
+    public String getImage() {
+        return productImage.getHtmlLink();
     }
 
     public void setImage(Image image) {
@@ -60,10 +60,21 @@ public class Product {
 
     public enum Image {
         // Add link to new product images here
-        OLD_GRAY("htmlLink"), GRANITE("htmlLink"), SLATE("htmlLink");
+        OLD_GRAY("productAssets/oldgray.jpg"),
+        GRANITE("productAssets/granite.jpg"),
+        SLATE("productAssets/slate.jpg");
 
+        private String htmlLink;
         Image(String htmlLink) {
+            setHtmlLink(htmlLink);
+        }
 
+        public String getHtmlLink() {
+            return htmlLink;
+        }
+
+        private void setHtmlLink(String htmlLink) {
+            this.htmlLink = htmlLink;
         }
     }
 }
