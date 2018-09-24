@@ -8,7 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
   <head>
-    <title>$Title$</title>
+    <title>Index</title>
       <link rel="stylesheet" type="text/css" href="StyleBuilderClasses.css"/>
   </head>
   <body>
@@ -16,9 +16,7 @@
       <div id="nav">
 
           <a class = "navItemLarge" id="homeName" href="index.jsp">Rocks and Rocks Alone</a>
-          <a class="navItem" id="productList" href="productList.xhtml">Product List</a>
-          <a class="navItem" id="productDetail" href="productDetail.xhtml">Product Detail</a>
-          <a class="navItem" id="cart" href="cart.xhtml">Cart</a>
+          <a class="navItem" id="productList" href="productDetail.jsp">Product List</a>
           <a class="navItemSmall" id="goToGitHub"
              href="https://github.com/TheMightyBoops/DistJavaProjectOne">
               View this page's sourcecode</a>
