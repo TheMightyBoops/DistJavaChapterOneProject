@@ -1,6 +1,12 @@
 package com.lucas.nolting.models;
 
-public class Product {
+import java.io.Serializable;
+
+import static com.lucas.nolting.models.Product.Image.GRANITE;
+import static com.lucas.nolting.models.Product.Image.OLD_GRAY;
+import static com.lucas.nolting.models.Product.Image.SLATE;
+
+public class Product implements Serializable {
     private String
             id,
             name,
@@ -8,6 +14,44 @@ public class Product {
 
     private double price;
     private Image productImage;
+
+    public Product() {
+
+    }
+
+    public Product(String selectedName) {
+        switch (selectedName) {
+            case "Old Gray":
+                setName("Old Gray");
+                setImage(OLD_GRAY);
+                setDescription("This classic is the most basic " +
+                        "standard rock we do at " +
+                        "Rocks and Rocks alone");
+                setPrice(4.99);
+                setId("0");
+            break;
+
+            case "Classic Granite":
+                setName("Classic Granite");
+                setImage(GRANITE);
+                setDescription("Add a little style " +
+                        "and flair to your rock, " +
+                        "you only live once.");
+                setPrice(6.00);
+                setId("1");
+            break;
+
+            case "Dark Slate":
+                setName("Dark Slate");
+                setImage(SLATE);
+                setDescription("Dark Slate Like a chalkboard, " +
+                        "but you buy it from us");
+                setPrice(5.00);
+                setId("2");
+            break;
+        }
+
+    }
 
     public Product(String id, String name, String description,
             double price, Image image) {
@@ -56,6 +100,11 @@ public class Product {
 
     public void setImage(Image image) {
         this.productImage = image;
+    }
+
+    public Product createAProduct(String productName) {
+
+        return null;
     }
 
     public enum Image {

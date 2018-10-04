@@ -13,3 +13,11 @@ Assignment Requirments
 5) make it look like the beer thing 
 6) make model more complex 
 7) add a way to add items to cart 
+
+Should have: 
+Cart is continuoussly added to
+
+Like to see 
+- quantity
+- delete from cart 
+- 

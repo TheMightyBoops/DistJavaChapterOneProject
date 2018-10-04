@@ -1,10 +1,16 @@
 package com.lucas.nolting.models;
 
-public class CartLineItem {
+import java.io.Serializable;
+
+public class CartLineItem implements Serializable {
     private String Name;
     private double price;
     private int id,
                 quantity;
+
+    public CartLineItem(){
+
+    }
 
     public CartLineItem(String name, double price,
                         int id, int quantity) {
@@ -18,7 +24,7 @@ public class CartLineItem {
         return Name;
     }
 
-    private void setName(String name) {
+    public void setName(String name) {
         Name = name;
     }
 
@@ -26,7 +32,7 @@ public class CartLineItem {
         return price;
     }
 
-    private void setPrice(double price) {
+    public void setPrice(double price) {
         this.price = price;
     }
 
@@ -34,7 +40,7 @@ public class CartLineItem {
         return id;
     }
 
-    private void setId(int id) {
+    public void setId(int id) {
         this.id = id;
     }
 

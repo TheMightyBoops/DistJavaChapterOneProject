@@ -25,8 +25,6 @@ import static com.lucas.nolting.models.Product.Image.SLATE;
 public class ProductController extends HttpServlet{
     // constants
     private static final String PRODUCT_LIST = "/productListing.jsp";
-    // STATE!!!
-    private static ArrayList<Product> products = new ArrayList<>();
 
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {

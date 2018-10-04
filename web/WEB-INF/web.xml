@@ -9,6 +9,8 @@
         <servlet-name>ProductController</servlet-name>
         <servlet-class>com.lucas.nolting.controllers.ProductController</servlet-class>
     </servlet>
+
+    <!--product -->
     <servlet-mapping>
         <servlet-name>ProductController</servlet-name>
         <url-pattern>/ProductController</url-pattern>
@@ -16,4 +18,14 @@
     <session-config>
         <session-timeout>30</session-timeout>
     </session-config>
+
+    <!--cart -->
+    <servlet>
+        <servlet-name>Cart</servlet-name>
+        <servlet-class>com.lucas.nolting.controllers.CartController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Cart</servlet-name>
+        <url-pattern>/Cart</url-pattern>
+    </servlet-mapping>
 </web-app>

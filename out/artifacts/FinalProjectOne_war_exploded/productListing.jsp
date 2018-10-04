@@ -37,6 +37,11 @@
         } else { out.print("error");}
 
 %>
-
+<form action="${pageContext.request.contextPath}/Cart" method="post">
+    <label for="quantity"></label>
+    <input id="quantity" name="quantity" type="number">
+    <button name="addToCart" type="submit" value="<%out.print(product.getName());%>">
+        Add To Cart</button>
+</form>
 </body>
 </html>
