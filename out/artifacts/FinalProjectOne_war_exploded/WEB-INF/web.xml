@@ -28,4 +28,20 @@
         <servlet-name>Cart</servlet-name>
         <url-pattern>/Cart</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>DisplayCart</servlet-name>
+        <servlet-class>com.lucas.nolting.controllers.DisplayCartController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DisplayCart</servlet-name>
+        <url-pattern>/DisplayCart</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>ClearCart</servlet-name>
+        <servlet-class>com.lucas.nolting.controllers.ClearCartController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ClearCart</servlet-name>
+        <url-pattern>/ClearCart</url-pattern>
+    </servlet-mapping>
 </web-app>

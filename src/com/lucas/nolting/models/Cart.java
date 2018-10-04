@@ -51,7 +51,7 @@ public class Cart implements Serializable {
         for (CartLineItem cartLine : cartLineItems) {
             cart = cart + cartLine.getName()
                     + " " + cartLine.getPrice() + " "
-                    + cartLine.getQuantity();
+                    + cartLine.getQuantity() + "<br>";
         }
         return cart;
     }

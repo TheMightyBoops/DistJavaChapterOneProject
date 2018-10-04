@@ -18,6 +18,7 @@
 
         <a class = "navItemLarge" id="homeName" href="index.jsp">Rocks and Rocks Alone</a>
         <a class="navItem" id="productList" href="productDetail.jsp">Product List</a>
+        <a class="navItem" id="cart" href="DisplayCart">Cart</a>
         <a class="navItemSmall" id="goToGitHub"
            href="https://github.com/TheMightyBoops/DistJavaProjectOne">
             View this page's sourcecode</a>
@@ -40,7 +41,7 @@
 <form action="${pageContext.request.contextPath}/Cart" method="post">
     <label for="quantity"></label>
     <input id="quantity" name="quantity" type="number">
-    <button name="addToCart" type="submit" value="<%out.print(product.getName());%>">
+    <button class="buttonDefault" name="addToCart" type="submit" value="<%out.print(product.getName());%>">
         Add To Cart</button>
 </form>
 </body>

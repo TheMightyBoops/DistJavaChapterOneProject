@@ -17,6 +17,7 @@
 
         <a class = "navItemLarge" id="homeName" href="index.jsp">Rocks and Rocks Alone</a>
         <a class="navItem" id="productList" href="productDetail.jsp">Product List</a>
+        <a class="navItem" id="cart" href="DisplayCart">Cart</a>
         <a class="navItemSmall" id="goToGitHub"
            href="https://github.com/TheMightyBoops/DistJavaProjectOne">
             View this page's sourcecode</a>
