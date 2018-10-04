@@ -23,5 +23,5 @@
 hs_err_pid*
 
 #intellij specific files
-.idea/*
-DistJavaProject1Complete.iml
+#.idea/*
+#DistJavaProject1Complete.iml
