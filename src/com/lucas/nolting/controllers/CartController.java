@@ -56,7 +56,7 @@ public class CartController extends HttpServlet {
                 res.addCookie(setName);
                 res.addCookie(setQuan);
             }
-
+            //TODO Test
             view.forward(rq, res);
         }
     }
